@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright under GNU General Public License
+# Copyright under GNU General Public License v3.0
 if [ `date +%Y%m%d` = "$day" ]; then
     exit 0;
 fi
@@ -14,3 +14,4 @@ tar -zcvf backup.www/backup.www.YOUR_PROJECT.$FILE /var/www/html/YOUR_PROJECT
 #add to crontab, 
 # crontab -e
 # */30 * * * * ./backup.www.passkeeper.sh
+# ^-^ ^-^ ^-^
